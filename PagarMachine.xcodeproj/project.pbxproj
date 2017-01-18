@@ -15,6 +15,7 @@
 		811A64061E2F090F00EF9AF7 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 811A64041E2F090F00EF9AF7 /* LaunchScreen.storyboard */; };
 		811A64111E2F091200EF9AF7 /* PagarMachineTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 811A64101E2F091200EF9AF7 /* PagarMachineTests.m */; };
 		811A641C1E2F091200EF9AF7 /* PagarMachineUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 811A641B1E2F091200EF9AF7 /* PagarMachineUITests.m */; };
+		811A642C1E2F116000EF9AF7 /* libdesafio.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 811A642B1E2F116000EF9AF7 /* libdesafio.a */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -51,6 +52,8 @@
 		811A64171E2F091200EF9AF7 /* PagarMachineUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = PagarMachineUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		811A641B1E2F091200EF9AF7 /* PagarMachineUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PagarMachineUITests.m; sourceTree = "<group>"; };
 		811A641D1E2F091300EF9AF7 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		811A64291E2F112900EF9AF7 /* desafio.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = desafio.h; sourceTree = "<group>"; };
+		811A642B1E2F116000EF9AF7 /* libdesafio.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libdesafio.a; path = ../../../../../../../Users/Paulinha/Desktop/pauladesafioios/libdesafio.a; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,6 +61,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				811A642C1E2F116000EF9AF7 /* libdesafio.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -85,6 +89,7 @@
 				811A640F1E2F091200EF9AF7 /* PagarMachineTests */,
 				811A641A1E2F091200EF9AF7 /* PagarMachineUITests */,
 				811A63F41E2F090D00EF9AF7 /* Products */,
+				811A642A1E2F116000EF9AF7 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -101,6 +106,7 @@
 		811A63F51E2F090D00EF9AF7 /* PagarMachine */ = {
 			isa = PBXGroup;
 			children = (
+				811A64291E2F112900EF9AF7 /* desafio.h */,
 				811A63F91E2F090E00EF9AF7 /* AppDelegate.h */,
 				811A63FA1E2F090E00EF9AF7 /* AppDelegate.m */,
 				811A63FC1E2F090E00EF9AF7 /* ViewController.h */,
@@ -138,6 +144,14 @@
 				811A641D1E2F091300EF9AF7 /* Info.plist */,
 			);
 			path = PagarMachineUITests;
+			sourceTree = "<group>";
+		};
+		811A642A1E2F116000EF9AF7 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				811A642B1E2F116000EF9AF7 /* libdesafio.a */,
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -427,6 +441,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = 95A3Z2AW32;
 				INFOPLIST_FILE = PagarMachine/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = br.com.pan.PagarMachine;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -439,6 +454,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = 95A3Z2AW32;
 				INFOPLIST_FILE = PagarMachine/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = br.com.pan.PagarMachine;
 				PRODUCT_NAME = "$(TARGET_NAME)";
