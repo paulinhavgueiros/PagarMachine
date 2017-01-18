@@ -1,0 +1,537 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		811A63F81E2F090E00EF9AF7 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 811A63F71E2F090E00EF9AF7 /* main.m */; };
+		811A63FB1E2F090E00EF9AF7 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 811A63FA1E2F090E00EF9AF7 /* AppDelegate.m */; };
+		811A63FE1E2F090E00EF9AF7 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 811A63FD1E2F090E00EF9AF7 /* ViewController.m */; };
+		811A64011E2F090F00EF9AF7 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 811A63FF1E2F090F00EF9AF7 /* Main.storyboard */; };
+		811A64031E2F090F00EF9AF7 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 811A64021E2F090F00EF9AF7 /* Assets.xcassets */; };
+		811A64061E2F090F00EF9AF7 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 811A64041E2F090F00EF9AF7 /* LaunchScreen.storyboard */; };
+		811A64111E2F091200EF9AF7 /* PagarMachineTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 811A64101E2F091200EF9AF7 /* PagarMachineTests.m */; };
+		811A641C1E2F091200EF9AF7 /* PagarMachineUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 811A641B1E2F091200EF9AF7 /* PagarMachineUITests.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		811A640D1E2F091200EF9AF7 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 811A63EB1E2F090700EF9AF7 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 811A63F21E2F090800EF9AF7;
+			remoteInfo = PagarMachine;
+		};
+		811A64181E2F091200EF9AF7 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 811A63EB1E2F090700EF9AF7 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 811A63F21E2F090800EF9AF7;
+			remoteInfo = PagarMachine;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		811A63F31E2F090D00EF9AF7 /* PagarMachine.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PagarMachine.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		811A63F71E2F090E00EF9AF7 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		811A63F91E2F090E00EF9AF7 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		811A63FA1E2F090E00EF9AF7 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		811A63FC1E2F090E00EF9AF7 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		811A63FD1E2F090E00EF9AF7 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		811A64001E2F090F00EF9AF7 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		811A64021E2F090F00EF9AF7 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		811A64051E2F090F00EF9AF7 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		811A64071E2F090F00EF9AF7 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		811A640C1E2F091200EF9AF7 /* PagarMachineTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = PagarMachineTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		811A64101E2F091200EF9AF7 /* PagarMachineTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PagarMachineTests.m; sourceTree = "<group>"; };
+		811A64121E2F091200EF9AF7 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		811A64171E2F091200EF9AF7 /* PagarMachineUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = PagarMachineUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		811A641B1E2F091200EF9AF7 /* PagarMachineUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PagarMachineUITests.m; sourceTree = "<group>"; };
+		811A641D1E2F091300EF9AF7 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		811A63F01E2F090800EF9AF7 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		811A64091E2F091200EF9AF7 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		811A64141E2F091200EF9AF7 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		811A63EA1E2F090700EF9AF7 = {
+			isa = PBXGroup;
+			children = (
+				811A63F51E2F090D00EF9AF7 /* PagarMachine */,
+				811A640F1E2F091200EF9AF7 /* PagarMachineTests */,
+				811A641A1E2F091200EF9AF7 /* PagarMachineUITests */,
+				811A63F41E2F090D00EF9AF7 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		811A63F41E2F090D00EF9AF7 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				811A63F31E2F090D00EF9AF7 /* PagarMachine.app */,
+				811A640C1E2F091200EF9AF7 /* PagarMachineTests.xctest */,
+				811A64171E2F091200EF9AF7 /* PagarMachineUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		811A63F51E2F090D00EF9AF7 /* PagarMachine */ = {
+			isa = PBXGroup;
+			children = (
+				811A63F91E2F090E00EF9AF7 /* AppDelegate.h */,
+				811A63FA1E2F090E00EF9AF7 /* AppDelegate.m */,
+				811A63FC1E2F090E00EF9AF7 /* ViewController.h */,
+				811A63FD1E2F090E00EF9AF7 /* ViewController.m */,
+				811A63FF1E2F090F00EF9AF7 /* Main.storyboard */,
+				811A64021E2F090F00EF9AF7 /* Assets.xcassets */,
+				811A64041E2F090F00EF9AF7 /* LaunchScreen.storyboard */,
+				811A64071E2F090F00EF9AF7 /* Info.plist */,
+				811A63F61E2F090E00EF9AF7 /* Supporting Files */,
+			);
+			path = PagarMachine;
+			sourceTree = "<group>";
+		};
+		811A63F61E2F090E00EF9AF7 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				811A63F71E2F090E00EF9AF7 /* main.m */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		811A640F1E2F091200EF9AF7 /* PagarMachineTests */ = {
+			isa = PBXGroup;
+			children = (
+				811A64101E2F091200EF9AF7 /* PagarMachineTests.m */,
+				811A64121E2F091200EF9AF7 /* Info.plist */,
+			);
+			path = PagarMachineTests;
+			sourceTree = "<group>";
+		};
+		811A641A1E2F091200EF9AF7 /* PagarMachineUITests */ = {
+			isa = PBXGroup;
+			children = (
+				811A641B1E2F091200EF9AF7 /* PagarMachineUITests.m */,
+				811A641D1E2F091300EF9AF7 /* Info.plist */,
+			);
+			path = PagarMachineUITests;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		811A63F21E2F090800EF9AF7 /* PagarMachine */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 811A64201E2F091300EF9AF7 /* Build configuration list for PBXNativeTarget "PagarMachine" */;
+			buildPhases = (
+				811A63EF1E2F090800EF9AF7 /* Sources */,
+				811A63F01E2F090800EF9AF7 /* Frameworks */,
+				811A63F11E2F090800EF9AF7 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = PagarMachine;
+			productName = PagarMachine;
+			productReference = 811A63F31E2F090D00EF9AF7 /* PagarMachine.app */;
+			productType = "com.apple.product-type.application";
+		};
+		811A640B1E2F091200EF9AF7 /* PagarMachineTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 811A64231E2F091300EF9AF7 /* Build configuration list for PBXNativeTarget "PagarMachineTests" */;
+			buildPhases = (
+				811A64081E2F091200EF9AF7 /* Sources */,
+				811A64091E2F091200EF9AF7 /* Frameworks */,
+				811A640A1E2F091200EF9AF7 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				811A640E1E2F091200EF9AF7 /* PBXTargetDependency */,
+			);
+			name = PagarMachineTests;
+			productName = PagarMachineTests;
+			productReference = 811A640C1E2F091200EF9AF7 /* PagarMachineTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		811A64161E2F091200EF9AF7 /* PagarMachineUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 811A64261E2F091300EF9AF7 /* Build configuration list for PBXNativeTarget "PagarMachineUITests" */;
+			buildPhases = (
+				811A64131E2F091200EF9AF7 /* Sources */,
+				811A64141E2F091200EF9AF7 /* Frameworks */,
+				811A64151E2F091200EF9AF7 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				811A64191E2F091200EF9AF7 /* PBXTargetDependency */,
+			);
+			name = PagarMachineUITests;
+			productName = PagarMachineUITests;
+			productReference = 811A64171E2F091200EF9AF7 /* PagarMachineUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		811A63EB1E2F090700EF9AF7 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0820;
+				ORGANIZATIONNAME = "Paula Vasconcelos Gueiros";
+				TargetAttributes = {
+					811A63F21E2F090800EF9AF7 = {
+						CreatedOnToolsVersion = 8.2.1;
+						DevelopmentTeam = 95A3Z2AW32;
+						ProvisioningStyle = Automatic;
+					};
+					811A640B1E2F091200EF9AF7 = {
+						CreatedOnToolsVersion = 8.2.1;
+						DevelopmentTeam = 95A3Z2AW32;
+						ProvisioningStyle = Automatic;
+						TestTargetID = 811A63F21E2F090800EF9AF7;
+					};
+					811A64161E2F091200EF9AF7 = {
+						CreatedOnToolsVersion = 8.2.1;
+						DevelopmentTeam = 95A3Z2AW32;
+						ProvisioningStyle = Automatic;
+						TestTargetID = 811A63F21E2F090800EF9AF7;
+					};
+				};
+			};
+			buildConfigurationList = 811A63EE1E2F090700EF9AF7 /* Build configuration list for PBXProject "PagarMachine" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 811A63EA1E2F090700EF9AF7;
+			productRefGroup = 811A63F41E2F090D00EF9AF7 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				811A63F21E2F090800EF9AF7 /* PagarMachine */,
+				811A640B1E2F091200EF9AF7 /* PagarMachineTests */,
+				811A64161E2F091200EF9AF7 /* PagarMachineUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		811A63F11E2F090800EF9AF7 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				811A64061E2F090F00EF9AF7 /* LaunchScreen.storyboard in Resources */,
+				811A64031E2F090F00EF9AF7 /* Assets.xcassets in Resources */,
+				811A64011E2F090F00EF9AF7 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		811A640A1E2F091200EF9AF7 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		811A64151E2F091200EF9AF7 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		811A63EF1E2F090800EF9AF7 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				811A63FE1E2F090E00EF9AF7 /* ViewController.m in Sources */,
+				811A63FB1E2F090E00EF9AF7 /* AppDelegate.m in Sources */,
+				811A63F81E2F090E00EF9AF7 /* main.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		811A64081E2F091200EF9AF7 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				811A64111E2F091200EF9AF7 /* PagarMachineTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		811A64131E2F091200EF9AF7 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				811A641C1E2F091200EF9AF7 /* PagarMachineUITests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		811A640E1E2F091200EF9AF7 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 811A63F21E2F090800EF9AF7 /* PagarMachine */;
+			targetProxy = 811A640D1E2F091200EF9AF7 /* PBXContainerItemProxy */;
+		};
+		811A64191E2F091200EF9AF7 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 811A63F21E2F090800EF9AF7 /* PagarMachine */;
+			targetProxy = 811A64181E2F091200EF9AF7 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		811A63FF1E2F090F00EF9AF7 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				811A64001E2F090F00EF9AF7 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		811A64041E2F090F00EF9AF7 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				811A64051E2F090F00EF9AF7 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		811A641E1E2F091300EF9AF7 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.2;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		811A641F1E2F091300EF9AF7 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		811A64211E2F091300EF9AF7 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = 95A3Z2AW32;
+				INFOPLIST_FILE = PagarMachine/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = br.com.pan.PagarMachine;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		811A64221E2F091300EF9AF7 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = 95A3Z2AW32;
+				INFOPLIST_FILE = PagarMachine/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = br.com.pan.PagarMachine;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		811A64241E2F091300EF9AF7 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				DEVELOPMENT_TEAM = 95A3Z2AW32;
+				INFOPLIST_FILE = PagarMachineTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = br.com.pan.PagarMachineTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/PagarMachine.app/PagarMachine";
+			};
+			name = Debug;
+		};
+		811A64251E2F091300EF9AF7 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				DEVELOPMENT_TEAM = 95A3Z2AW32;
+				INFOPLIST_FILE = PagarMachineTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = br.com.pan.PagarMachineTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/PagarMachine.app/PagarMachine";
+			};
+			name = Release;
+		};
+		811A64271E2F091300EF9AF7 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				DEVELOPMENT_TEAM = 95A3Z2AW32;
+				INFOPLIST_FILE = PagarMachineUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = br.com.pan.PagarMachineUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = PagarMachine;
+			};
+			name = Debug;
+		};
+		811A64281E2F091300EF9AF7 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				DEVELOPMENT_TEAM = 95A3Z2AW32;
+				INFOPLIST_FILE = PagarMachineUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = br.com.pan.PagarMachineUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = PagarMachine;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		811A63EE1E2F090700EF9AF7 /* Build configuration list for PBXProject "PagarMachine" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				811A641E1E2F091300EF9AF7 /* Debug */,
+				811A641F1E2F091300EF9AF7 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		811A64201E2F091300EF9AF7 /* Build configuration list for PBXNativeTarget "PagarMachine" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				811A64211E2F091300EF9AF7 /* Debug */,
+				811A64221E2F091300EF9AF7 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		811A64231E2F091300EF9AF7 /* Build configuration list for PBXNativeTarget "PagarMachineTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				811A64241E2F091300EF9AF7 /* Debug */,
+				811A64251E2F091300EF9AF7 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		811A64261E2F091300EF9AF7 /* Build configuration list for PBXNativeTarget "PagarMachineUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				811A64271E2F091300EF9AF7 /* Debug */,
+				811A64281E2F091300EF9AF7 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 811A63EB1E2F090700EF9AF7 /* Project object */;
+}
