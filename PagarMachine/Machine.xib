@@ -116,6 +116,7 @@
                 <constraint firstAttribute="trailing" secondItem="HdP-eK-N5m" secondAttribute="trailing" id="kEN-cD-fjx"/>
                 <constraint firstItem="HdP-eK-N5m" firstAttribute="height" secondItem="iN0-l3-epB" secondAttribute="height" multiplier="0.55" id="uVb-H4-95E"/>
             </constraints>
+            <nil key="simulatedStatusBarMetrics"/>
             <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
             <point key="canvasLocation" x="42" y="68.5"/>
         </view>
