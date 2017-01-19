@@ -16,6 +16,7 @@
 		811A64111E2F091200EF9AF7 /* PagarMachineTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 811A64101E2F091200EF9AF7 /* PagarMachineTests.m */; };
 		811A641C1E2F091200EF9AF7 /* PagarMachineUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 811A641B1E2F091200EF9AF7 /* PagarMachineUITests.m */; };
 		811A642C1E2F116000EF9AF7 /* libdesafio.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 811A642B1E2F116000EF9AF7 /* libdesafio.a */; };
+		81D022B81E3041DB00585181 /* Machine.xib in Resources */ = {isa = PBXBuildFile; fileRef = 81D022B71E3041DB00585181 /* Machine.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -54,6 +55,7 @@
 		811A641D1E2F091300EF9AF7 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		811A64291E2F112900EF9AF7 /* desafio.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = desafio.h; sourceTree = "<group>"; };
 		811A642B1E2F116000EF9AF7 /* libdesafio.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libdesafio.a; path = ../../../../../../../Users/Paulinha/Desktop/pauladesafioios/libdesafio.a; sourceTree = "<group>"; };
+		81D022B71E3041DB00585181 /* Machine.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = Machine.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -112,6 +114,7 @@
 				811A63FC1E2F090E00EF9AF7 /* ViewController.h */,
 				811A63FD1E2F090E00EF9AF7 /* ViewController.m */,
 				811A63FF1E2F090F00EF9AF7 /* Main.storyboard */,
+				81D022B71E3041DB00585181 /* Machine.xib */,
 				811A64021E2F090F00EF9AF7 /* Assets.xcassets */,
 				811A64041E2F090F00EF9AF7 /* LaunchScreen.storyboard */,
 				811A64071E2F090F00EF9AF7 /* Info.plist */,
@@ -264,6 +267,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				811A64061E2F090F00EF9AF7 /* LaunchScreen.storyboard in Resources */,
+				81D022B81E3041DB00585181 /* Machine.xib in Resources */,
 				811A64031E2F090F00EF9AF7 /* Assets.xcassets in Resources */,
 				811A64011E2F090F00EF9AF7 /* Main.storyboard in Resources */,
 			);
@@ -530,6 +534,7 @@
 				811A64221E2F091300EF9AF7 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		811A64231E2F091300EF9AF7 /* Build configuration list for PBXNativeTarget "PagarMachineTests" */ = {
 			isa = XCConfigurationList;
@@ -538,6 +543,7 @@
 				811A64251E2F091300EF9AF7 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		811A64261E2F091300EF9AF7 /* Build configuration list for PBXNativeTarget "PagarMachineUITests" */ = {
 			isa = XCConfigurationList;
@@ -546,6 +552,7 @@
 				811A64281E2F091300EF9AF7 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
