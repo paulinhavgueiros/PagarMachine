@@ -15,8 +15,13 @@
 		811A64061E2F090F00EF9AF7 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 811A64041E2F090F00EF9AF7 /* LaunchScreen.storyboard */; };
 		811A64111E2F091200EF9AF7 /* PagarMachineTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 811A64101E2F091200EF9AF7 /* PagarMachineTests.m */; };
 		811A641C1E2F091200EF9AF7 /* PagarMachineUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 811A641B1E2F091200EF9AF7 /* PagarMachineUITests.m */; };
-		811A642C1E2F116000EF9AF7 /* libdesafio.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 811A642B1E2F116000EF9AF7 /* libdesafio.a */; };
-		81D022B81E3041DB00585181 /* Machine.xib in Resources */ = {isa = PBXBuildFile; fileRef = 81D022B71E3041DB00585181 /* Machine.xib */; };
+		811E16B31E32F707006F8AF1 /* CALayer+Utils.m in Sources */ = {isa = PBXBuildFile; fileRef = 811E16AE1E32F707006F8AF1 /* CALayer+Utils.m */; };
+		811E16B41E32F707006F8AF1 /* UIColor+Utils.m in Sources */ = {isa = PBXBuildFile; fileRef = 811E16B01E32F707006F8AF1 /* UIColor+Utils.m */; };
+		811E16B51E32F707006F8AF1 /* UIView+Utils.m in Sources */ = {isa = PBXBuildFile; fileRef = 811E16B21E32F707006F8AF1 /* UIView+Utils.m */; };
+		811E16BB1E32F866006F8AF1 /* MachineView.m in Sources */ = {isa = PBXBuildFile; fileRef = 811E16BA1E32F866006F8AF1 /* MachineView.m */; };
+		811E16FC1E3300E0006F8AF1 /* libdesafio.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 811A642B1E2F116000EF9AF7 /* libdesafio.a */; };
+		811E16FE1E33228C006F8AF1 /* Todo in Resources */ = {isa = PBXBuildFile; fileRef = 811E16FD1E33228C006F8AF1 /* Todo */; };
+		81D022B81E3041DB00585181 /* MachineView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 81D022B71E3041DB00585181 /* MachineView.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -55,7 +60,16 @@
 		811A641D1E2F091300EF9AF7 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		811A64291E2F112900EF9AF7 /* desafio.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = desafio.h; sourceTree = "<group>"; };
 		811A642B1E2F116000EF9AF7 /* libdesafio.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libdesafio.a; path = ../../../../../../../Users/Paulinha/Desktop/pauladesafioios/libdesafio.a; sourceTree = "<group>"; };
-		81D022B71E3041DB00585181 /* Machine.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = Machine.xib; sourceTree = "<group>"; };
+		811E16AD1E32F707006F8AF1 /* CALayer+Utils.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "CALayer+Utils.h"; sourceTree = "<group>"; };
+		811E16AE1E32F707006F8AF1 /* CALayer+Utils.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "CALayer+Utils.m"; sourceTree = "<group>"; };
+		811E16AF1E32F707006F8AF1 /* UIColor+Utils.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIColor+Utils.h"; sourceTree = "<group>"; };
+		811E16B01E32F707006F8AF1 /* UIColor+Utils.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIColor+Utils.m"; sourceTree = "<group>"; };
+		811E16B11E32F707006F8AF1 /* UIView+Utils.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+Utils.h"; sourceTree = "<group>"; };
+		811E16B21E32F707006F8AF1 /* UIView+Utils.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+Utils.m"; sourceTree = "<group>"; };
+		811E16B91E32F866006F8AF1 /* MachineView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MachineView.h; sourceTree = "<group>"; };
+		811E16BA1E32F866006F8AF1 /* MachineView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MachineView.m; sourceTree = "<group>"; };
+		811E16FD1E33228C006F8AF1 /* Todo */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Todo; sourceTree = "<group>"; };
+		81D022B71E3041DB00585181 /* MachineView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = MachineView.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -63,7 +77,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				811A642C1E2F116000EF9AF7 /* libdesafio.a in Frameworks */,
+				811E16FC1E3300E0006F8AF1 /* libdesafio.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -108,16 +122,11 @@
 		811A63F51E2F090D00EF9AF7 /* PagarMachine */ = {
 			isa = PBXGroup;
 			children = (
-				811A64291E2F112900EF9AF7 /* desafio.h */,
-				811A63F91E2F090E00EF9AF7 /* AppDelegate.h */,
-				811A63FA1E2F090E00EF9AF7 /* AppDelegate.m */,
-				811A63FC1E2F090E00EF9AF7 /* ViewController.h */,
-				811A63FD1E2F090E00EF9AF7 /* ViewController.m */,
-				811A63FF1E2F090F00EF9AF7 /* Main.storyboard */,
-				81D022B71E3041DB00585181 /* Machine.xib */,
-				811A64021E2F090F00EF9AF7 /* Assets.xcassets */,
-				811A64041E2F090F00EF9AF7 /* LaunchScreen.storyboard */,
-				811A64071E2F090F00EF9AF7 /* Info.plist */,
+				811E16FD1E33228C006F8AF1 /* Todo */,
+				811E16B71E32F72F006F8AF1 /* Frameworks and Libraries */,
+				811E16AB1E32F5D8006F8AF1 /* Application Root */,
+				811E16AC1E32F6D2006F8AF1 /* Utilities */,
+				811E16B61E32F712006F8AF1 /* Views and Controllers */,
 				811A63F61E2F090E00EF9AF7 /* Supporting Files */,
 			);
 			path = PagarMachine;
@@ -126,6 +135,9 @@
 		811A63F61E2F090E00EF9AF7 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				811E16B81E32F774006F8AF1 /* User Interface */,
+				811A64021E2F090F00EF9AF7 /* Assets.xcassets */,
+				811A64071E2F090F00EF9AF7 /* Info.plist */,
 				811A63F71E2F090E00EF9AF7 /* main.m */,
 			);
 			name = "Supporting Files";
@@ -155,6 +167,57 @@
 				811A642B1E2F116000EF9AF7 /* libdesafio.a */,
 			);
 			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		811E16AB1E32F5D8006F8AF1 /* Application Root */ = {
+			isa = PBXGroup;
+			children = (
+				811A63F91E2F090E00EF9AF7 /* AppDelegate.h */,
+				811A63FA1E2F090E00EF9AF7 /* AppDelegate.m */,
+			);
+			name = "Application Root";
+			sourceTree = "<group>";
+		};
+		811E16AC1E32F6D2006F8AF1 /* Utilities */ = {
+			isa = PBXGroup;
+			children = (
+				811E16AD1E32F707006F8AF1 /* CALayer+Utils.h */,
+				811E16AE1E32F707006F8AF1 /* CALayer+Utils.m */,
+				811E16AF1E32F707006F8AF1 /* UIColor+Utils.h */,
+				811E16B01E32F707006F8AF1 /* UIColor+Utils.m */,
+				811E16B11E32F707006F8AF1 /* UIView+Utils.h */,
+				811E16B21E32F707006F8AF1 /* UIView+Utils.m */,
+			);
+			name = Utilities;
+			sourceTree = "<group>";
+		};
+		811E16B61E32F712006F8AF1 /* Views and Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				811A63FC1E2F090E00EF9AF7 /* ViewController.h */,
+				811A63FD1E2F090E00EF9AF7 /* ViewController.m */,
+				811E16B91E32F866006F8AF1 /* MachineView.h */,
+				811E16BA1E32F866006F8AF1 /* MachineView.m */,
+			);
+			name = "Views and Controllers";
+			sourceTree = "<group>";
+		};
+		811E16B71E32F72F006F8AF1 /* Frameworks and Libraries */ = {
+			isa = PBXGroup;
+			children = (
+				811A64291E2F112900EF9AF7 /* desafio.h */,
+			);
+			name = "Frameworks and Libraries";
+			sourceTree = "<group>";
+		};
+		811E16B81E32F774006F8AF1 /* User Interface */ = {
+			isa = PBXGroup;
+			children = (
+				811A64041E2F090F00EF9AF7 /* LaunchScreen.storyboard */,
+				811A63FF1E2F090F00EF9AF7 /* Main.storyboard */,
+				81D022B71E3041DB00585181 /* MachineView.xib */,
+			);
+			name = "User Interface";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -267,9 +330,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				811A64061E2F090F00EF9AF7 /* LaunchScreen.storyboard in Resources */,
-				81D022B81E3041DB00585181 /* Machine.xib in Resources */,
+				81D022B81E3041DB00585181 /* MachineView.xib in Resources */,
 				811A64031E2F090F00EF9AF7 /* Assets.xcassets in Resources */,
 				811A64011E2F090F00EF9AF7 /* Main.storyboard in Resources */,
+				811E16FE1E33228C006F8AF1 /* Todo in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -294,9 +358,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				811E16BB1E32F866006F8AF1 /* MachineView.m in Sources */,
+				811E16B51E32F707006F8AF1 /* UIView+Utils.m in Sources */,
+				811E16B41E32F707006F8AF1 /* UIColor+Utils.m in Sources */,
 				811A63FE1E2F090E00EF9AF7 /* ViewController.m in Sources */,
 				811A63FB1E2F090E00EF9AF7 /* AppDelegate.m in Sources */,
 				811A63F81E2F090E00EF9AF7 /* main.m in Sources */,
+				811E16B31E32F707006F8AF1 /* CALayer+Utils.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -447,6 +515,8 @@
 				INFOPLIST_FILE = PagarMachine/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				LIBRARY_SEARCH_PATHS = /Users/Paulinha/Desktop/pauladesafioios;
+				OTHER_LDFLAGS = "";
 				PRODUCT_BUNDLE_IDENTIFIER = br.com.pan.PagarMachine;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
@@ -460,6 +530,9 @@
 				INFOPLIST_FILE = PagarMachine/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				LIBRARY_SEARCH_PATHS = /Users/Paulinha/Desktop/pauladesafioios;
+				ONLY_ACTIVE_ARCH = YES;
+				OTHER_LDFLAGS = "";
 				PRODUCT_BUNDLE_IDENTIFIER = br.com.pan.PagarMachine;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};

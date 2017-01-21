@@ -1,0 +1,42 @@
+Todo:
+
+⚠️ p1111111: testar biblioteca!!! (utilizar exemplos link)
+⚠️ mudar ViewController pra MachineViewController
+⚠️ contruir layout botoes (as simples as possible)
+⚠️ construir primeira tela
+⚠️ NSNotification no clique dos botoes - a controller que estiver ativa no container responde!
+⚠️ construir segunda tela (inserir valor)
+⚠️ construir terceira tela (carregando)
+⚠️ construir quarta tela (valores de retorno), com legenda para voltar pro menu (ok ou menu)
+⚠️ botao MENU volta pro menu na segunda e quarta telas
+⚠️ documentar todo o codigo, padrao gerar html
+⚠️ revisar boas praticas!
+⚠️ gerar html documentacao
+⚠️ deletar xib file, se realmente decidido nao usar
+⚠️
+
+
+
+
+
+
+
+Done, not committed:
+
+✅
+✅
+✅
+✅
+✅
+
+
+
+
+
+Committed:
+
+✅ finish layout base
+✅ added useful categories
+✅ decided flow, with basic construction
+✅ launchscreen
+✅ dismissed MachineView.xib
