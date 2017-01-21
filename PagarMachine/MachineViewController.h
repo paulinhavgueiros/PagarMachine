@@ -1,5 +1,5 @@
 //
-//  ViewController.h
+//  MachineViewController.h
 //  PagarMachine
 //
 //  Created by Paula Vasconcelos Gueiros on 18/1/17.
@@ -8,7 +8,7 @@
 
 #import <UIKit/UIKit.h>
 
-@interface ViewController : UIViewController
+@interface MachineViewController : UIViewController
 
 @end
 

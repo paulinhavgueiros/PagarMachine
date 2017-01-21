@@ -1,9 +1,8 @@
 Todo:
 
-⚠️ p1111111: testar biblioteca!!! (utilizar exemplos link)
-⚠️ mudar ViewController pra MachineViewController
+⚠️
 ⚠️ contruir layout botoes (as simples as possible)
-⚠️ construir primeira tela
+⚠️ construir primeira tela "selecione a operacao"
 ⚠️ NSNotification no clique dos botoes - a controller que estiver ativa no container responde!
 ⚠️ construir segunda tela (inserir valor)
 ⚠️ construir terceira tela (carregando)
@@ -13,7 +12,7 @@ Todo:
 ⚠️ revisar boas praticas!
 ⚠️ gerar html documentacao
 ⚠️ deletar xib file, se realmente decidido nao usar
-⚠️
+⚠️ programa de testes
 
 
 
@@ -23,8 +22,8 @@ Todo:
 
 Done, not committed:
 
-✅
-✅
+✅ p1: testar biblioteca!
+✅ mudar ViewController pra MachineViewController
 ✅
 ✅
 ✅
