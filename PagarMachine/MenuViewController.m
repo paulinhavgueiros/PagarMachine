@@ -62,6 +62,7 @@
     [super viewWillAppear:animated];
     
     self.selectedMenuItem = 0;
+    [self.tableView reloadData];
 }
 
 
@@ -153,10 +154,6 @@
         selectValueViewController.selectedOperationNumber = operationNumber;
         selectValueViewController.isOperationCombined = [[self.operations[self.selectedMenuItem] valueForKey:OPERATION_IS_COMBINED_KEY] boolValue];
     }
-}
-
-- (IBAction)unwindToMenu:(UIStoryboardSegue*)unwindSegue {
-    
 }
 
 @end

@@ -75,7 +75,7 @@ static const NSInteger maxPasswordLabelTextLength = 4;
 
 - (void)menuButtonPressed:(NSNotification *)notification {
     if ([self isViewLoaded] && self.view.window) {
-        [self dismissViewControllerAnimated:NO completion:nil];
+        [self.navigationController popViewControllerAnimated:NO];
     }
 }
 
@@ -118,7 +118,7 @@ static const NSInteger maxPasswordLabelTextLength = 4;
 - (void)confirmButtonPressed:(NSNotification *)notification {
     if ([self isViewLoaded] && self.view.window) {
         if (![self.valueLabel.text isEqualToString:@"00,00"] && [self.passwordLabel.text length] > 0) {
-            [self performSegueWithIdentifier:@"modalToResults" sender:self];
+            [self performSegueWithIdentifier:@"pushToResults" sender:self];
         }
     }
 }
@@ -127,7 +127,7 @@ static const NSInteger maxPasswordLabelTextLength = 4;
 #pragma mark - Navigation
 
 - (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender {
-    if ([segue.identifier isEqualToString:@"modalToResults"]) {
+    if ([segue.identifier isEqualToString:@"pushToResults"]) {
         ResultsViewController *resultsViewController = (ResultsViewController *)[segue destinationViewController];
         resultsViewController.selectedOperationNumber = self.selectedOperationNumber;
         resultsViewController.selectedValueInCents = [[NSString plainStringFromString:self.valueLabel.text] integerValue];

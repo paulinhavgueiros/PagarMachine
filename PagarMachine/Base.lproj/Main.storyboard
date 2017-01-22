@@ -866,10 +866,10 @@
                                 </constraints>
                             </stackView>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="mCF-ke-0IK">
-                                <rect key="frame" x="76" y="60" width="116.5" height="30"/>
+                                <rect key="frame" x="76" y="60" width="117" height="30"/>
                                 <subviews>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="00,00" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="dnh-En-fXk">
-                                        <rect key="frame" x="70" y="6.5" width="42.5" height="17.5"/>
+                                        <rect key="frame" x="70" y="6" width="43" height="18"/>
                                         <fontDescription key="fontDescription" name="AmericanTypewriter" family="American Typewriter" pointSize="15"/>
                                         <nil key="textColor"/>
                                         <nil key="highlightedColor"/>
@@ -883,10 +883,10 @@
                                 </constraints>
                             </view>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="41j-jC-rer">
-                                <rect key="frame" x="76" y="96" width="116.5" height="30"/>
+                                <rect key="frame" x="76" y="96" width="117" height="30"/>
                                 <subviews>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="wEQ-bi-1nf">
-                                        <rect key="frame" x="70" y="15" width="42.5" height="0.0"/>
+                                        <rect key="frame" x="70" y="15" width="43" height="0.0"/>
                                         <fontDescription key="fontDescription" name="AmericanTypewriter" family="American Typewriter" pointSize="15"/>
                                         <nil key="textColor"/>
                                         <nil key="highlightedColor"/>
@@ -921,7 +921,7 @@
                         <outlet property="passwordLabelView" destination="41j-jC-rer" id="BaG-kZ-76W"/>
                         <outlet property="valueLabel" destination="dnh-En-fXk" id="J1b-DO-wvA"/>
                         <outlet property="valueLabelView" destination="mCF-ke-0IK" id="pup-Ar-DZw"/>
-                        <segue destination="Bt4-XI-Vzc" kind="presentation" identifier="modalToResults" animates="NO" modalPresentationStyle="currentContext" id="O2E-va-4f4"/>
+                        <segue destination="Bt4-XI-Vzc" kind="show" identifier="pushToResults" animates="NO" id="O2E-va-4f4"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="bOh-3K-Alt" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -941,16 +941,16 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="IVC-xM-lN9">
-                                <rect key="frame" x="0.0" y="-1" width="205" height="186"/>
+                                <rect key="frame" x="0.0" y="0.0" width="205" height="185"/>
                                 <subviews>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" text="" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="18" translatesAutoresizingMaskIntoConstraints="NO" id="3iA-ki-TkN">
-                                        <rect key="frame" x="8" y="9" width="189" height="140"/>
+                                        <rect key="frame" x="8" y="8" width="189" height="140"/>
                                         <fontDescription key="fontDescription" name="AmericanTypewriter" family="American Typewriter" pointSize="18"/>
                                         <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <label hidden="YES" opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Pressione MENU para retornar" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="12" translatesAutoresizingMaskIntoConstraints="NO" id="VPR-2A-JWq">
-                                        <rect key="frame" x="8" y="157" width="189" height="21"/>
+                                        <rect key="frame" x="8" y="156" width="189" height="21"/>
                                         <fontDescription key="fontDescription" name="AmericanTypewriter" family="American Typewriter" pointSize="18"/>
                                         <nil key="textColor"/>
                                         <nil key="highlightedColor"/>
@@ -1052,11 +1052,9 @@
                         <outlet property="loadingSuperview" destination="Joa-Hw-YJ8" id="UHS-AT-dDr"/>
                         <outlet property="resultsLabel" destination="3iA-ki-TkN" id="hJG-HN-HW3"/>
                         <outlet property="resultsSuperview" destination="IVC-xM-lN9" id="LGd-VD-kdf"/>
-                        <segue destination="Wmd-5m-NYA" kind="unwind" identifier="unwindFromResultsToMenu" animates="NO" unwindAction="unwindToMenu:" id="lxC-hM-TSJ"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="H6q-qi-ZVv" userLabel="First Responder" sceneMemberID="firstResponder"/>
-                <exit id="Wmd-5m-NYA" userLabel="Exit" sceneMemberID="exit"/>
             </objects>
             <point key="canvasLocation" x="1965" y="617.95774647887322"/>
         </scene>

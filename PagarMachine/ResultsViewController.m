@@ -180,7 +180,7 @@ void setResultLabel (NSString *string) {
 - (void)menuButtonPressed:(NSNotification *)notification {
     if ([self isViewLoaded] && self.view.window) {
         if (self.isOperationFinalized) {
-            [self performSegueWithIdentifier:@"unwindFromResultsToMenu" sender:self];
+            [self.navigationController popToRootViewControllerAnimated:NO];
         }
     }
 }
