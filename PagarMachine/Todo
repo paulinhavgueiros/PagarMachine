@@ -1,10 +1,9 @@
 Todo:
 
-⚠️ construir terceira tela (carregando + valores de retorno)
-⚠️ nao aceitar inputs ate finalizacao
+⚠️ finalize callbacks (sem bloquear interface)
+⚠️ trocar tabela por view com label result q tem retorno terceira tela
 ⚠️ na finalizacao processamento, legenda para voltar pro menu
-⚠️ setar e tratar notifications terceira tela
-⚠️ * botao MENU volta pro menu na segunda e terceira telas (3a - so na finaliz)
+
 
 ⚠️ documentar todo o codigo, padrao gerar html
 ⚠️ revisar boas praticas!
@@ -22,7 +21,9 @@ Todo:
 
 Done, not committed:
 
-✅
+
+
+
 
 
 
@@ -42,3 +43,9 @@ Committed:
 ✅ construir segunda tela (inserir valor)
 ✅ nsnotifications : so executar se viewcontroller estiver na tela
 ✅ setar e tratar notifications segunda tela
+✅ terceira tela: nao aceitar inputs ate finalizacao
+✅ setar e tratar notifications terceira tela
+✅ botao MENU volta pro menu na segunda e terceira telas (3a - so na finaliz)
+✅ transf callback terceira view
+✅ pass user operation data through controllers
+✅ construir terceira tela

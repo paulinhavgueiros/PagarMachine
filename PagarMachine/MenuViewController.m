@@ -12,6 +12,7 @@
 
 #import "MenuViewController.h"
 #import "MenuTableViewCell.h"
+#import "SelectValueViewController.h"
 #import "UIColor+Utils.h"
 #import "NSArray+Utils.h"
 
@@ -140,11 +141,13 @@
 
 #pragma mark - Navigation
 
-//// In a storyboard-based application, you will often want to do a little preparation before navigation
-//- (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender {
-//    // Get the new view controller using [segue destinationViewController].
-//    // Pass the selected object to the new view controller.
-//}
+- (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender {
+    if ([segue.identifier isEqualToString:@"modalToSelectValue"]) {
+        SelectValueViewController *selectValueViewController = (SelectValueViewController *)[segue destinationViewController];
+        NSInteger operationNumber = [[self.operations[self.selectedMenuItem] valueForKey:OPERATION_CODE_KEY] integerValue];
+        selectValueViewController.selectedOperationNumber = operationNumber;
+    }
+}
 
 - (IBAction)unwindToMenu:(UIStoryboardSegue*)unwindSegue {
     

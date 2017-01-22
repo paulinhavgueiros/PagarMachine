@@ -65,4 +65,11 @@
     return newString;
 }
 
++ (NSString *)plainStringFromString:(NSString *)string {
+    NSMutableString *plain = [NSMutableString stringWithString:string];
+    plain = [NSMutableString stringWithString:[plain stringByReplacingOccurrencesOfString:@"," withString:@""]];
+    plain = [NSMutableString stringWithString:[plain stringByReplacingOccurrencesOfString:@"." withString:@""]];
+    return plain;
+}
+
 @end

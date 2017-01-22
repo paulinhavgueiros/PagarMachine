@@ -7,6 +7,7 @@
 //
 
 #import "ResultsViewController.h"
+#import "desafio.h"
 
 typedef enum {
     DotStateAllHidden = 0,
@@ -23,6 +24,10 @@ typedef enum {
 
 @property (strong, nonatomic) NSTimer *timer;
 @property (nonatomic) NSInteger currentDotState;
+@property (nonatomic) BOOL operationFinalized;
+
+@property (weak, nonatomic) IBOutlet NSLayoutConstraint *tableHiddenConstraint;
+@property (weak, nonatomic) IBOutlet NSLayoutConstraint *tableShownConstraint;
 
 @end
 
@@ -31,6 +36,7 @@ typedef enum {
 - (void)viewDidLoad {
     [super viewDidLoad];
     [self setup];
+    [self performOperation];
 }
 
 - (void)setup {
@@ -38,9 +44,43 @@ typedef enum {
     [self.loadingDot2 setHidden:YES];
     [self.loadingDot3 setHidden:YES];
     
-    self.currentDotState = DotStateAllHidden;
+    self.operationFinalized = NO;
     
+    self.currentDotState = DotStateAllHidden;
+
     self.timer = [NSTimer scheduledTimerWithTimeInterval:0.5f target:self selector:@selector(onTimerEvent:) userInfo:nil repeats:YES];
+    
+    // setup notification observers
+    [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(menuButtonPressed:) name:@"menuButtonPressed" object:nil];
+}
+
+- (void)performOperation {
+//    int operation = 3;
+//    unsigned char myString [15] = "MAKE10000000000";
+//    unsigned char* tmpBuffer = &myString[0];
+//    unsigned int length = 15;
+//
+//    pm_callback callback;
+//    callback = callbackPagarMachine;
+//    pm_register_callback(callback);
+//
+//    NSLog(@"Operação 3 (capturar) sendo executada para R$100.000,00");
+//    pm_exec(operation, tmpBuffer, length);
+}
+
+
+#pragma mark - Callback from Operation
+
+void callbackPagarMachine (int operation, unsigned char *data, unsigned int length) {
+    
+    NSLog(@"Código de retorno: %d", operation);
+    if (data) {
+        NSLog(@"\tRetorno: %s", data);
+    }
+    
+    //se inicializacao
+    //self.tableHiddenConstraint.priority = 500;
+    //self.tableShownConstraint.priority = 900;
 }
 
 
@@ -48,7 +88,9 @@ typedef enum {
 
 - (void)menuButtonPressed:(NSNotification *)notification {
     if ([self isViewLoaded] && self.view.window) {
-        // dismiss until first view controller
+        if (self.operationFinalized) {
+            [self performSegueWithIdentifier:@"unwindFromResultsToMenu" sender:self];
+        }
     }
 }
 
@@ -82,14 +124,12 @@ typedef enum {
 }
 
 
-/*
 #pragma mark - Navigation
 
-// In a storyboard-based application, you will often want to do a little preparation before navigation
-- (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender {
-    // Get the new view controller using [segue destinationViewController].
-    // Pass the selected object to the new view controller.
-}
-*/
+//// In a storyboard-based application, you will often want to do a little preparation before navigation
+//- (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender {
+//    // Get the new view controller using [segue destinationViewController].
+//    // Pass the selected object to the new view controller.
+//}
 
 @end

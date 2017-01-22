@@ -968,7 +968,7 @@
                             <constraint firstAttribute="trailing" secondItem="jcP-f0-UtP" secondAttribute="trailing" constant="8" id="MaP-bu-r7C"/>
                             <constraint firstItem="0tw-DN-Rdz" firstAttribute="top" secondItem="vyN-Gb-qZY" secondAttribute="top" id="Qa2-EJ-kzz"/>
                             <constraint firstItem="TzE-7A-IWA" firstAttribute="centerX" secondItem="w2I-Ik-XjD" secondAttribute="centerX" id="dVd-OX-PtM"/>
-                            <constraint firstItem="lQa-bB-bdY" firstAttribute="top" secondItem="REa-bq-dJm" secondAttribute="top" constant="-50" id="h7U-JF-HWv"/>
+                            <constraint firstItem="lQa-bB-bdY" firstAttribute="top" secondItem="REa-bq-dJm" secondAttribute="top" priority="900" constant="-50" id="h7U-JF-HWv"/>
                             <constraint firstItem="0tw-DN-Rdz" firstAttribute="leading" secondItem="TzE-7A-IWA" secondAttribute="trailing" constant="18" id="hdy-65-HT4"/>
                             <constraint firstItem="REa-bq-dJm" firstAttribute="top" secondItem="Z1e-HQ-SbT" secondAttribute="bottom" priority="500" id="htB-qK-YPF"/>
                             <constraint firstItem="jcP-f0-UtP" firstAttribute="leading" secondItem="w2I-Ik-XjD" secondAttribute="leading" constant="8" id="kQh-RL-06E"/>
@@ -981,7 +981,9 @@
                         <outlet property="loadingDot1" destination="vyN-Gb-qZY" id="3vO-dU-agt"/>
                         <outlet property="loadingDot2" destination="TzE-7A-IWA" id="Y1g-kv-7g9"/>
                         <outlet property="loadingDot3" destination="0tw-DN-Rdz" id="IvQ-HE-rlH"/>
-                        <segue destination="Wmd-5m-NYA" kind="unwind" identifier="unwindFromResultsToMenu" unwindAction="unwindToMenu:" id="lxC-hM-TSJ"/>
+                        <outlet property="tableHiddenConstraint" destination="h7U-JF-HWv" id="7BI-5Y-GZs"/>
+                        <outlet property="tableShownConstraint" destination="htB-qK-YPF" id="F7f-8x-HxQ"/>
+                        <segue destination="Wmd-5m-NYA" kind="unwind" identifier="unwindFromResultsToMenu" animates="NO" unwindAction="unwindToMenu:" id="lxC-hM-TSJ"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="H6q-qi-ZVv" userLabel="First Responder" sceneMemberID="firstResponder"/>

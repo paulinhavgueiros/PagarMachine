@@ -12,5 +12,6 @@
 
 + (NSString *)maskedCurrencyString:(NSString *)string addingChar:(NSString *)charater withMaxLength:(NSInteger)maxLength;
 + (NSString *)stringByRemovingLastCharWithString:(NSString *)string;
++ (NSString *)plainStringFromString:(NSString *)string;
 
 @end
