@@ -91,6 +91,7 @@
 		8134E76E1E34568900EDAD84 /* NSString+Utils.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSString+Utils.m"; sourceTree = "<group>"; };
 		8134E7701E34639F00EDAD84 /* ResultsViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ResultsViewController.h; sourceTree = "<group>"; };
 		8134E7711E34639F00EDAD84 /* ResultsViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ResultsViewController.m; sourceTree = "<group>"; };
+		81B0A94A1E350DB1001DD2CE /* Utils.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Utils.h; sourceTree = "<group>"; };
 		81D022B71E3041DB00585181 /* MachineView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = MachineView.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -204,6 +205,7 @@
 		811E16AC1E32F6D2006F8AF1 /* Utilities */ = {
 			isa = PBXGroup;
 			children = (
+				81B0A94A1E350DB1001DD2CE /* Utils.h */,
 				811E16AD1E32F707006F8AF1 /* CALayer+Utils.h */,
 				811E16AE1E32F707006F8AF1 /* CALayer+Utils.m */,
 				811E16AF1E32F707006F8AF1 /* UIColor+Utils.h */,
