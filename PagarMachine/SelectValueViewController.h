@@ -11,5 +11,6 @@
 @interface SelectValueViewController : UIViewController
 
 @property (nonatomic) NSInteger selectedOperationNumber;
+@property (nonatomic) BOOL isOperationCombined;
 
 @end

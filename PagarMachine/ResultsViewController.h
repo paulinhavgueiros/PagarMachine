@@ -12,5 +12,7 @@
 
 @property (nonatomic) NSInteger selectedOperationNumber;
 @property (nonatomic) NSInteger selectedValueInCents;
+@property (nonatomic) BOOL isOperationCombined;
+@property (strong, nonatomic) NSString *inputPassword;
 
 @end

@@ -1,8 +1,7 @@
 Todo:
 
-⚠️ finalize callbacks (sem bloquear interface)
-⚠️ trocar tabela por view com label result q tem retorno terceira tela
-⚠️ na finalizacao processamento, legenda para voltar pro menu
+⚠️
+⚠️
 
 
 ⚠️ documentar todo o codigo, padrao gerar html
@@ -22,8 +21,7 @@ Todo:
 Done, not committed:
 
 
-
-
+✅
 
 
 
@@ -49,3 +47,10 @@ Committed:
 ✅ transf callback terceira view
 ✅ pass user operation data through controllers
 ✅ construir terceira tela
+✅ 2a tela: senha
+✅ 3a tela: check password correct
+✅ trocar tabela por view com label result q tem retorno terceira tela
+✅ bug: menu captando botao no valueselect
+✅ finalize callbacks (sem bloquear interface)
+✅ na finalizacao processamento, legenda para voltar pro menu
+✅ tratar senha errada

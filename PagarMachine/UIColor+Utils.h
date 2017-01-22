@@ -12,7 +12,9 @@
 typedef enum DefaultColor {
     DefaultColorMainScreenBackground = 101,
     DefaultColorMenuItemSelectedBackground = 102,
-    DefaultColorMenuItemDeselectedBackground = 103
+    DefaultColorMenuItemDeselectedBackground = 103,
+    DefaultColorLabelSelectedBackground = 104,
+    DefaultColorLabelDeselectedBackground = 105
 } DefaultColor;
 
 @interface UIColor(Utils)

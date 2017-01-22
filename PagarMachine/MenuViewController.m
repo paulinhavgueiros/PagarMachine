@@ -9,6 +9,7 @@
 #define OPERATION_TITLE_KEY             @"title"
 #define OPERATION_MENU_INDEX_KEY        @"menuIndex"
 #define OPERATION_CODE_KEY              @"operationCode"
+#define OPERATION_IS_COMBINED_KEY       @"isCombined"
 
 #import "MenuViewController.h"
 #import "MenuTableViewCell.h"
@@ -42,8 +43,6 @@
     self.tableView.delegate = self;
     self.tableView.dataSource = self;
     
-    self.selectedMenuItem = 0;
-    
     self.operations = [NSArray loadPlistWithName:@"Operations"];
     self.numberOfItemsInMenu = [self.operations count];
     
@@ -57,6 +56,12 @@
     [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(downButtonPressed:) name:@"downButtonPressed" object:nil];
     [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(numberButtonPressed:) name:@"numberButtonPressed" object:nil];
     [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(confirmButtonPressed:) name:@"confirmButtonPressed" object:nil];
+}
+
+- (void)viewWillAppear:(BOOL)animated {
+    [super viewWillAppear:animated];
+    
+    self.selectedMenuItem = 0;
 }
 
 
@@ -134,7 +139,7 @@
 
 - (void)confirmButtonPressed:(NSNotification *)notification {
     if ([self isViewLoaded] && self.view.window) {
-        [self performSegueWithIdentifier:@"modalToSelectValue" sender:self];
+        [self performSegueWithIdentifier:@"pushToSelectValue" sender:self];
     }
 }
 
@@ -142,10 +147,11 @@
 #pragma mark - Navigation
 
 - (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender {
-    if ([segue.identifier isEqualToString:@"modalToSelectValue"]) {
+    if ([segue.identifier isEqualToString:@"pushToSelectValue"]) {
         SelectValueViewController *selectValueViewController = (SelectValueViewController *)[segue destinationViewController];
         NSInteger operationNumber = [[self.operations[self.selectedMenuItem] valueForKey:OPERATION_CODE_KEY] integerValue];
         selectValueViewController.selectedOperationNumber = operationNumber;
+        selectValueViewController.isOperationCombined = [[self.operations[self.selectedMenuItem] valueForKey:OPERATION_IS_COMBINED_KEY] boolValue];
     }
 }
 
