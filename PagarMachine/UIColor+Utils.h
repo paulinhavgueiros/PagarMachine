@@ -8,7 +8,7 @@
 
 #import <UIKit/UIKit.h>
 
-//A Default color has a number that corresponds to a tag of a view in Colors.nib
+///A Default color has a number that corresponds to a tag of a view in Colors.nib
 typedef enum DefaultColor {
     DefaultColorMainScreenBackground = 101,
     DefaultColorMenuItemSelectedBackground = 102,

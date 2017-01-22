@@ -1,13 +1,9 @@
 Todo:
 
-⚠️
-⚠️
-
-
 ⚠️ documentar todo o codigo, padrao gerar html
-⚠️ revisar boas praticas!
+⚠️ documentar senha padrao
+⚠️ revisar boas praticas: enum ReturnCode por plist de codigo de retorno com strings pra mostrar
 ⚠️ gerar html documentacao
-⚠️ deletar xib file, se realmente decidido nao usar
 ⚠️ appIcon pagarMe
 ⚠️ programa de testes
 ⚠️ se der tempo, tutorial pageviewcontroller
@@ -20,8 +16,7 @@ Todo:
 
 Done, not committed:
 
-
-✅
+✅ deletar xib file, se realmente decidido nao usar
 
 
 

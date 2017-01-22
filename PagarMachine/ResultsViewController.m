@@ -78,7 +78,7 @@ id thisClass;
 
     self.timer = [NSTimer scheduledTimerWithTimeInterval:0.5f target:self selector:@selector(onTimerEvent:) userInfo:nil repeats:YES];
     
-    // setup notification observers
+    /// setup notification observers
     [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(menuButtonPressed:) name:@"menuButtonPressed" object:nil];
 }
 
@@ -132,7 +132,7 @@ void callbackPagarMachine (int operation, unsigned char *data, unsigned int leng
             
         case ReturnCodeOperationAuthorizationSuccessful:
             if (!((ResultsViewController *)thisClass).isOperationCombined) {
-                resultString = [NSString stringWithFormat:@"Autorização feita com sucesso\nCódigo:%s", data];
+                resultString = [NSString stringWithFormat:@"Autorização feita com sucesso\nCódigo: %s", data];
             } else {
                 resultString = @"Autorização feita com sucesso\n";
             }
@@ -140,7 +140,7 @@ void callbackPagarMachine (int operation, unsigned char *data, unsigned int leng
             break;
             
         case ReturnCodeOperationCaptureSuccessful:
-            resultString = [NSString stringWithFormat:@"%@Captura feita com sucesso\nCódigo:%s", resultString, data];
+            resultString = [NSString stringWithFormat:@"%@Captura feita com sucesso\nCódigo: %s", resultString, data];
             setResultLabel(resultString);
             break;
             

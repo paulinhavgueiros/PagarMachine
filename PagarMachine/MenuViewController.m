@@ -51,7 +51,7 @@
         [self.cellHeights addObject:[NSNumber numberWithFloat:44.f]];
     }
     
-    // setup notification observers
+    /// setup notification observers
     [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(upButtonPressed:) name:@"upButtonPressed" object:nil];
     [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(downButtonPressed:) name:@"downButtonPressed" object:nil];
     [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(numberButtonPressed:) name:@"numberButtonPressed" object:nil];
@@ -120,17 +120,17 @@
 
 - (void)numberButtonPressed:(NSNotification *)notification {
     if ([self isViewLoaded] && self.view.window) {
-        // some number has been pressed
+        /// some number has been pressed
         if ([notification.object isKindOfClass:[UIButton class]]) {
             
-            // fetch text number from selected button
+            /// fetch text number from selected button
             UIButton *selectedButton = (UIButton *)notification.object;
             NSInteger number = [selectedButton.titleLabel.text integerValue];
             
-            // check if selected button corresponds to one of the menu options
+            /// check if selected button corresponds to one of the menu options
             if (number > 0 && number <= [self.operations count]) {
                 
-                // update selectedMenuItem
+                /// update selectedMenuItem
                 self.selectedMenuItem = number - 1;
                 [self.tableView reloadData];
             }

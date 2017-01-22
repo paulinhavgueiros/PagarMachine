@@ -37,13 +37,13 @@ static const NSInteger maxPasswordLabelTextLength = 4;
 }
 
 - (void)setup {
-    // set value label selected for start state
+    /// set value label selected for start state
     self.valueLabelSelected = YES;
     
-    // initialize password with empty string
+    /// initialize password with empty string
     self.password = [NSMutableString stringWithFormat:@""];
 
-    // setup notification observers
+    /// setup notification observers
     [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(upButtonPressed:) name:@"upButtonPressed" object:nil];
     [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(downButtonPressed:) name:@"downButtonPressed" object:nil];
     [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(menuButtonPressed:) name:@"menuButtonPressed" object:nil];
@@ -82,7 +82,7 @@ static const NSInteger maxPasswordLabelTextLength = 4;
 - (void)numberButtonPressed:(NSNotification *)notification {
     if ([self isViewLoaded] && self.view.window) {
         if ([notification.object isKindOfClass:[UIButton class]]) {
-            // fetch text number from selected button
+            /// fetch text number from selected button
             UIButton *selectedButton = (UIButton *)notification.object;
             NSString *number = selectedButton.titleLabel.text;
             
