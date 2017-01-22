@@ -21,6 +21,14 @@
 		811E16BB1E32F866006F8AF1 /* MachineView.m in Sources */ = {isa = PBXBuildFile; fileRef = 811E16BA1E32F866006F8AF1 /* MachineView.m */; };
 		811E16FC1E3300E0006F8AF1 /* libdesafio.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 811A642B1E2F116000EF9AF7 /* libdesafio.a */; };
 		811E16FE1E33228C006F8AF1 /* Todo in Resources */ = {isa = PBXBuildFile; fileRef = 811E16FD1E33228C006F8AF1 /* Todo */; };
+		8134E7571E342ADF00EDAD84 /* MenuViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8134E7561E342ADF00EDAD84 /* MenuViewController.m */; };
+		8134E75A1E342B5300EDAD84 /* MenuTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 8134E7591E342B5300EDAD84 /* MenuTableViewCell.m */; };
+		8134E75C1E342FB800EDAD84 /* Colors.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8134E75B1E342FB800EDAD84 /* Colors.xib */; };
+		8134E7621E343C1E00EDAD84 /* Operations.plist in Resources */ = {isa = PBXBuildFile; fileRef = 8134E7611E343C1E00EDAD84 /* Operations.plist */; };
+		8134E7651E343CB300EDAD84 /* NSArray+Utils.m in Sources */ = {isa = PBXBuildFile; fileRef = 8134E7641E343CB300EDAD84 /* NSArray+Utils.m */; };
+		8134E76C1E3451A400EDAD84 /* SelectValueViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8134E76B1E3451A400EDAD84 /* SelectValueViewController.m */; };
+		8134E76F1E34568900EDAD84 /* NSString+Utils.m in Sources */ = {isa = PBXBuildFile; fileRef = 8134E76E1E34568900EDAD84 /* NSString+Utils.m */; };
+		8134E7721E34639F00EDAD84 /* ResultsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8134E7711E34639F00EDAD84 /* ResultsViewController.m */; };
 		81D022B81E3041DB00585181 /* MachineView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 81D022B71E3041DB00585181 /* MachineView.xib */; };
 /* End PBXBuildFile section */
 
@@ -69,6 +77,20 @@
 		811E16B91E32F866006F8AF1 /* MachineView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MachineView.h; sourceTree = "<group>"; };
 		811E16BA1E32F866006F8AF1 /* MachineView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MachineView.m; sourceTree = "<group>"; };
 		811E16FD1E33228C006F8AF1 /* Todo */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Todo; sourceTree = "<group>"; };
+		8134E7551E342ADF00EDAD84 /* MenuViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MenuViewController.h; sourceTree = "<group>"; };
+		8134E7561E342ADF00EDAD84 /* MenuViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MenuViewController.m; sourceTree = "<group>"; };
+		8134E7581E342B5300EDAD84 /* MenuTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MenuTableViewCell.h; sourceTree = "<group>"; };
+		8134E7591E342B5300EDAD84 /* MenuTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MenuTableViewCell.m; sourceTree = "<group>"; };
+		8134E75B1E342FB800EDAD84 /* Colors.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = Colors.xib; sourceTree = "<group>"; };
+		8134E7611E343C1E00EDAD84 /* Operations.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Operations.plist; sourceTree = "<group>"; };
+		8134E7631E343CB300EDAD84 /* NSArray+Utils.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSArray+Utils.h"; sourceTree = "<group>"; };
+		8134E7641E343CB300EDAD84 /* NSArray+Utils.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSArray+Utils.m"; sourceTree = "<group>"; };
+		8134E76A1E3451A400EDAD84 /* SelectValueViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SelectValueViewController.h; sourceTree = "<group>"; };
+		8134E76B1E3451A400EDAD84 /* SelectValueViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SelectValueViewController.m; sourceTree = "<group>"; };
+		8134E76D1E34568900EDAD84 /* NSString+Utils.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSString+Utils.h"; sourceTree = "<group>"; };
+		8134E76E1E34568900EDAD84 /* NSString+Utils.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSString+Utils.m"; sourceTree = "<group>"; };
+		8134E7701E34639F00EDAD84 /* ResultsViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ResultsViewController.h; sourceTree = "<group>"; };
+		8134E7711E34639F00EDAD84 /* ResultsViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ResultsViewController.m; sourceTree = "<group>"; };
 		81D022B71E3041DB00585181 /* MachineView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = MachineView.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -139,8 +161,7 @@
 				811A64021E2F090F00EF9AF7 /* Assets.xcassets */,
 				811A64071E2F090F00EF9AF7 /* Info.plist */,
 				811A63F71E2F090E00EF9AF7 /* main.m */,
-				811E16B91E32F866006F8AF1 /* MachineView.h */,
-				811E16BA1E32F866006F8AF1 /* MachineView.m */,
+				81230FE41E34216100BA4225 /* Delete later */,
 			);
 			name = "Supporting Files";
 			sourceTree = "<group>";
@@ -189,6 +210,10 @@
 				811E16B01E32F707006F8AF1 /* UIColor+Utils.m */,
 				811E16B11E32F707006F8AF1 /* UIView+Utils.h */,
 				811E16B21E32F707006F8AF1 /* UIView+Utils.m */,
+				8134E7631E343CB300EDAD84 /* NSArray+Utils.h */,
+				8134E7641E343CB300EDAD84 /* NSArray+Utils.m */,
+				8134E76D1E34568900EDAD84 /* NSString+Utils.h */,
+				8134E76E1E34568900EDAD84 /* NSString+Utils.m */,
 			);
 			name = Utilities;
 			sourceTree = "<group>";
@@ -198,6 +223,15 @@
 			children = (
 				811A63FC1E2F090E00EF9AF7 /* MachineViewController.h */,
 				811A63FD1E2F090E00EF9AF7 /* MachineViewController.m */,
+				8134E7551E342ADF00EDAD84 /* MenuViewController.h */,
+				8134E7561E342ADF00EDAD84 /* MenuViewController.m */,
+				8134E7581E342B5300EDAD84 /* MenuTableViewCell.h */,
+				8134E7591E342B5300EDAD84 /* MenuTableViewCell.m */,
+				8134E76A1E3451A400EDAD84 /* SelectValueViewController.h */,
+				8134E76B1E3451A400EDAD84 /* SelectValueViewController.m */,
+				8134E7701E34639F00EDAD84 /* ResultsViewController.h */,
+				8134E7711E34639F00EDAD84 /* ResultsViewController.m */,
+				8134E7611E343C1E00EDAD84 /* Operations.plist */,
 			);
 			name = "Views and Controllers";
 			sourceTree = "<group>";
@@ -215,9 +249,19 @@
 			children = (
 				811A64041E2F090F00EF9AF7 /* LaunchScreen.storyboard */,
 				811A63FF1E2F090F00EF9AF7 /* Main.storyboard */,
-				81D022B71E3041DB00585181 /* MachineView.xib */,
+				8134E75B1E342FB800EDAD84 /* Colors.xib */,
 			);
 			name = "User Interface";
+			sourceTree = "<group>";
+		};
+		81230FE41E34216100BA4225 /* Delete later */ = {
+			isa = PBXGroup;
+			children = (
+				811E16B91E32F866006F8AF1 /* MachineView.h */,
+				811E16BA1E32F866006F8AF1 /* MachineView.m */,
+				81D022B71E3041DB00585181 /* MachineView.xib */,
+			);
+			name = "Delete later";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -330,7 +374,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				811A64061E2F090F00EF9AF7 /* LaunchScreen.storyboard in Resources */,
+				8134E75C1E342FB800EDAD84 /* Colors.xib in Resources */,
 				81D022B81E3041DB00585181 /* MachineView.xib in Resources */,
+				8134E7621E343C1E00EDAD84 /* Operations.plist in Resources */,
 				811A64031E2F090F00EF9AF7 /* Assets.xcassets in Resources */,
 				811A64011E2F090F00EF9AF7 /* Main.storyboard in Resources */,
 				811E16FE1E33228C006F8AF1 /* Todo in Resources */,
@@ -361,10 +407,16 @@
 				811E16BB1E32F866006F8AF1 /* MachineView.m in Sources */,
 				811E16B51E32F707006F8AF1 /* UIView+Utils.m in Sources */,
 				811E16B41E32F707006F8AF1 /* UIColor+Utils.m in Sources */,
+				8134E7571E342ADF00EDAD84 /* MenuViewController.m in Sources */,
 				811A63FE1E2F090E00EF9AF7 /* MachineViewController.m in Sources */,
 				811A63FB1E2F090E00EF9AF7 /* AppDelegate.m in Sources */,
 				811A63F81E2F090E00EF9AF7 /* main.m in Sources */,
+				8134E75A1E342B5300EDAD84 /* MenuTableViewCell.m in Sources */,
+				8134E7651E343CB300EDAD84 /* NSArray+Utils.m in Sources */,
+				8134E76C1E3451A400EDAD84 /* SelectValueViewController.m in Sources */,
+				8134E76F1E34568900EDAD84 /* NSString+Utils.m in Sources */,
 				811E16B31E32F707006F8AF1 /* CALayer+Utils.m in Sources */,
+				8134E7721E34639F00EDAD84 /* ResultsViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

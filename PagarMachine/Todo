@@ -1,18 +1,18 @@
 Todo:
 
-⚠️
-⚠️ contruir layout botoes (as simples as possible)
-⚠️ construir primeira tela "selecione a operacao"
-⚠️ NSNotification no clique dos botoes - a controller que estiver ativa no container responde!
-⚠️ construir segunda tela (inserir valor)
-⚠️ construir terceira tela (carregando)
-⚠️ construir quarta tela (valores de retorno), com legenda para voltar pro menu (ok ou menu)
-⚠️ botao MENU volta pro menu na segunda e quarta telas
+⚠️ construir terceira tela (carregando + valores de retorno)
+⚠️ nao aceitar inputs ate finalizacao
+⚠️ na finalizacao processamento, legenda para voltar pro menu
+⚠️ setar e tratar notifications terceira tela
+⚠️ * botao MENU volta pro menu na segunda e terceira telas (3a - so na finaliz)
+
 ⚠️ documentar todo o codigo, padrao gerar html
 ⚠️ revisar boas praticas!
 ⚠️ gerar html documentacao
 ⚠️ deletar xib file, se realmente decidido nao usar
+⚠️ appIcon pagarMe
 ⚠️ programa de testes
+⚠️ se der tempo, tutorial pageviewcontroller
 
 
 
@@ -22,12 +22,7 @@ Todo:
 
 Done, not committed:
 
-✅ p1: testar biblioteca!
-✅ mudar ViewController pra MachineViewController
 ✅
-✅
-✅
-
 
 
 
@@ -39,3 +34,11 @@ Committed:
 ✅ decided flow, with basic construction
 ✅ launchscreen
 ✅ dismissed MachineView.xib
+✅ p1: testar biblioteca!
+✅ mudar ViewController pra MachineViewController
+✅ contruir layout botoes
+✅ construir primeira tela "selecione a operacao"
+✅ NSNotification no clique dos botoes - a controller que estiver ativa no container responde!
+✅ construir segunda tela (inserir valor)
+✅ nsnotifications : so executar se viewcontroller estiver na tela
+✅ setar e tratar notifications segunda tela

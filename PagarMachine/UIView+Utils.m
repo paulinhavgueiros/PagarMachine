@@ -1,8 +1,8 @@
 //
 //  UIView+Utils.m
-//  Solidario
+//  PagarMachine
 //
-//  Created by Paula Vasconcelos Gueiros on 15/4/16.
+//  Created by Paula Vasconcelos Gueiros on 20/1/17.
 //  Copyright © 2016 paulinhavgueiros. All rights reserved.
 //
 

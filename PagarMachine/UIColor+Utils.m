@@ -1,9 +1,9 @@
 //
 //  UIColor+Utils.m
-//  Solidario
+//  PagarMachine
 //
-//  Created by Marcelo Sampaio on 7/8/15.
-//  Copyright (c) 2015 Marcelo Sampaio. All rights reserved.
+//  Created by Paula Vasconcelos Gueiros on 20/1/17.
+//  Copyright © 2016 paulinhavgueiros. All rights reserved.
 //
 
 #import "UIColor+Utils.h"
