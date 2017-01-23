@@ -11,6 +11,42 @@
 
 @interface MachineViewController ()
 
+/*!
+ * @discussion Method that posts NSNotification to defaultCenter letting other view controllers know that the up arrow button was clicked
+ * @param sender The button that was clicked (up button)
+ */
+- (IBAction)upButtonPressed:(id)sender;
+
+/*!
+ * @discussion Method that posts NSNotification to defaultCenter letting other view controllers know that the down arrow button was clicked
+ * @param sender The button that was clicked (down button)
+ */
+- (IBAction)downButtonPressed:(id)sender;
+
+/*!
+ * @discussion Method that posts NSNotification to defaultCenter letting other view controllers know that the menu button was clicked
+ * @param sender The button that was clicked (menu button)
+ */
+- (IBAction)menuButtonPressed:(id)sender;
+
+/*!
+ * @discussion Method that posts NSNotification to defaultCenter letting other view controllers know that one of the number buttons was clicked
+ * @param sender Whichever button was clicked, among the number buttons
+ */
+- (IBAction)numberButtonPressed:(id)sender;
+
+/*!
+ * @discussion Method that posts NSNotification to defaultCenter letting other view controllers know that the correct value button was clicked
+ * @param sender The button that was clicked (correct value button)
+ */
+- (IBAction)correctButtonPressed:(id)sender;
+
+/*!
+ * @discussion Method that posts NSNotification to defaultCenter letting other view controllers know that the confirm button was clicked
+ * @param sender The button that was clicked (confirm button)
+ */
+- (IBAction)confirmButtonPressed:(id)sender;
+
 @end
 
 
@@ -20,11 +56,6 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-}
-
-- (void)didReceiveMemoryWarning {
-    [super didReceiveMemoryWarning];
-    /// Dispose of any resources that can be recreated.
 }
 
 

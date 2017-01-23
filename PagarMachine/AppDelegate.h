@@ -10,6 +10,9 @@
 
 @interface AppDelegate : UIResponder <UIApplicationDelegate>
 
+/*!
+ * @brief window object above which app is executed
+ */
 @property (strong, nonatomic) UIWindow *window;
 
 @end
