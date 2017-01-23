@@ -869,13 +869,13 @@
                                 <rect key="frame" x="76" y="60" width="117" height="30"/>
                                 <subviews>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="00,00" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="dnh-En-fXk">
-                                        <rect key="frame" x="70" y="6" width="43" height="18"/>
+                                        <rect key="frame" x="70.5" y="6.5" width="42.5" height="17.5"/>
                                         <fontDescription key="fontDescription" name="AmericanTypewriter" family="American Typewriter" pointSize="15"/>
                                         <nil key="textColor"/>
                                         <nil key="highlightedColor"/>
                                     </label>
                                 </subviews>
-                                <color key="backgroundColor" red="0.78431372549019607" green="0.78431372549019607" blue="0.78431372549019607" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="30" id="kUL-tV-ZIX"/>
                                     <constraint firstAttribute="trailing" secondItem="dnh-En-fXk" secondAttribute="trailing" constant="4" id="tTo-xJ-ihG"/>
@@ -886,13 +886,13 @@
                                 <rect key="frame" x="76" y="96" width="117" height="30"/>
                                 <subviews>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="wEQ-bi-1nf">
-                                        <rect key="frame" x="70" y="15" width="43" height="0.0"/>
+                                        <rect key="frame" x="70.5" y="15" width="42.5" height="0.0"/>
                                         <fontDescription key="fontDescription" name="AmericanTypewriter" family="American Typewriter" pointSize="15"/>
                                         <nil key="textColor"/>
                                         <nil key="highlightedColor"/>
                                     </label>
                                 </subviews>
-                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <color key="backgroundColor" red="0.7843137255" green="0.7843137255" blue="0.7843137255" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <constraints>
                                     <constraint firstItem="wEQ-bi-1nf" firstAttribute="centerY" secondItem="41j-jC-rer" secondAttribute="centerY" id="aYg-kQ-N4t"/>
                                     <constraint firstAttribute="height" constant="30" id="eH0-yY-nCi"/>
