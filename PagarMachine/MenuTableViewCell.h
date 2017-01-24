@@ -10,6 +10,9 @@
 
 @interface MenuTableViewCell : UITableViewCell
 
+/*!
+ * @brief the menu option title
+ */
 @property (weak, nonatomic) IBOutlet UILabel *menuTitleLabel;
 
 @end

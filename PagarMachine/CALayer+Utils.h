@@ -11,7 +11,9 @@
 
 @interface CALayer(Utils)
 
-/// This assigns a UIColor to borderColor.
+/*!
+ * @brief the layer's border color
+ */
 @property (nonatomic, assign) UIColor* borderUIColor;
 
 @end

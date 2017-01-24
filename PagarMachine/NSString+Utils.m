@@ -10,7 +10,9 @@
 
 @implementation NSString(Utils)
 
-+ (NSString *)maskedCurrencyString:(NSString *)string addingChar:(NSString *)charater withMaxLength:(NSInteger)maxLength {
+#pragma mark - Currency Mask
+
++ (NSString *)maskedCurrencyString:(NSString *)string addingChar:(NSString *)character withMaxLength:(NSInteger)maxLength {
 
     NSMutableString *newString = [NSMutableString stringWithString:string];
     
@@ -37,10 +39,10 @@
         }
     }
     
-    return [newString stringByAppendingString:charater];
+    return [newString stringByAppendingString:character];
 }
 
-+ (NSString *)stringByRemovingLastCharWithString:(NSString *)string {
++ (NSString *)maskedCurrencyStringByRemovingLastCharWithString:(NSString *)string {
     
     NSMutableString *newString = [NSMutableString stringWithString:string];
     

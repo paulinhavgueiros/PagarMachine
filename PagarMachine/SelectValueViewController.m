@@ -13,12 +13,34 @@
 
 @interface SelectValueViewController ()
 
+/*!
+ * @brief the label showing selected amount for the operation to be performed on
+ */
 @property (weak, nonatomic) IBOutlet UILabel *valueLabel;
+
+/*!
+ * @brief the label showing the password used to confirm the operation
+ */
 @property (weak, nonatomic) IBOutlet UILabel *passwordLabel;
+
+/*!
+ * @brief the view containing the value label
+ */
 @property (weak, nonatomic) IBOutlet UIView *valueLabelView;
+
+/*!
+ * @brief the view containing the password label
+ */
 @property (weak, nonatomic) IBOutlet UIView *passwordLabelView;
 
+/*!
+ * @brief the password entered by the user
+ */
 @property (strong, nonatomic) NSMutableString *password;
+
+/*!
+ * @brief whether or not the value label is selected
+ */
 @property (nonatomic) BOOL valueLabelSelected;
 
 @end
@@ -26,7 +48,14 @@
 
 @implementation SelectValueViewController
 
+/*!
+ * @brief the maximum size of the text in the value label
+ */
 static const NSInteger maxValueLabelTextLength = 12;
+
+/*!
+ * @brief the maximum size of the text in the password label
+ */
 static const NSInteger maxPasswordLabelTextLength = 4;
 
 #pragma mark - Initialization
@@ -36,6 +65,9 @@ static const NSInteger maxPasswordLabelTextLength = 4;
     [self setup];
 }
 
+/*!
+ * @discussion Method that sets up the user interface and performs any necessary view initialization
+ */
 - (void)setup {
     /// set value label selected for start state
     self.valueLabelSelected = YES;
@@ -55,6 +87,9 @@ static const NSInteger maxPasswordLabelTextLength = 4;
 
 #pragma mark - NSNotification Selector Methods
 
+/*!
+ * @discussion Method executed when the machine's up button in pressed.  If possible, changes the selected input field to the option above the currect selected one.
+ */
 - (void)upButtonPressed:(NSNotification *)notification {
     if ([self isViewLoaded] && self.view.window) {
         if (!self.valueLabelSelected) {
@@ -64,6 +99,9 @@ static const NSInteger maxPasswordLabelTextLength = 4;
     }
 }
 
+/*!
+ * @discussion Method executed when the machine's down button in pressed.  If possible, changes the selected input field to the option below the currect selected one.
+ */
 - (void)downButtonPressed:(NSNotification *)notification {
     if ([self isViewLoaded] && self.view.window) {
         if (self.valueLabelSelected) {
@@ -73,12 +111,18 @@ static const NSInteger maxPasswordLabelTextLength = 4;
     }
 }
 
+/*!
+ * @discussion Method executed when the machine's mwnu button in pressed.  Returns the machine's UI to the menu screen.
+ */
 - (void)menuButtonPressed:(NSNotification *)notification {
     if ([self isViewLoaded] && self.view.window) {
         [self.navigationController popViewControllerAnimated:NO];
     }
 }
 
+/*!
+ * @discussion Method executed when the any of the machine's number buttons are pressed.  If possible, adds the selected number to the current selected input field.
+ */
 - (void)numberButtonPressed:(NSNotification *)notification {
     if ([self isViewLoaded] && self.view.window) {
         if ([notification.object isKindOfClass:[UIButton class]]) {
@@ -100,10 +144,13 @@ static const NSInteger maxPasswordLabelTextLength = 4;
     }
 }
 
+/*!
+ * @discussion Method executed when the machine's correct button is pressed.  If possible, removes the last character in the current selected input field.
+ */
 - (void)correctButtonPressed:(NSNotification *)notification {
     if ([self isViewLoaded] && self.view.window) {
         if (self.valueLabelSelected) {
-            self.valueLabel.text = [NSString stringByRemovingLastCharWithString:self.valueLabel.text];
+            self.valueLabel.text = [NSString maskedCurrencyStringByRemovingLastCharWithString:self.valueLabel.text];
         } else {
             if ([self.passwordLabel.text length] > 0) {
                 NSMutableString *passwordString = [self.passwordLabel.text mutableCopy];
@@ -115,6 +162,9 @@ static const NSInteger maxPasswordLabelTextLength = 4;
     }
 }
 
+/*!
+ * @discussion Method executed when the machine's confirm button is pressed.  If possible, changes the machine's UI to the next screen.
+ */
 - (void)confirmButtonPressed:(NSNotification *)notification {
     if ([self isViewLoaded] && self.view.window) {
         if (![self.valueLabel.text isEqualToString:@"00,00"] && [self.passwordLabel.text length] > 0) {
@@ -129,6 +179,9 @@ static const NSInteger maxPasswordLabelTextLength = 4;
 - (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender {
     if ([segue.identifier isEqualToString:@"pushToResults"]) {
         ResultsViewController *resultsViewController = (ResultsViewController *)[segue destinationViewController];
+        
+        /// setup new view controller with the selected user options
+        
         resultsViewController.selectedOperationNumber = self.selectedOperationNumber;
         resultsViewController.selectedValueInCents = [[NSString plainStringFromString:self.valueLabel.text] integerValue];
         resultsViewController.isOperationCombined = self.isOperationCombined;
@@ -139,6 +192,9 @@ static const NSInteger maxPasswordLabelTextLength = 4;
 
 #pragma mark - UI Helper Methods
 
+/*!
+ * @discussion Method that updates the UI when the user changes the current selected input field using one of the machine arrows
+ */
 - (void)updateUI {
     if (self.valueLabelSelected) {
         [self.valueLabelView setBackgroundColor:[UIColor defaultColor:DefaultColorLabelSelectedBackground]];

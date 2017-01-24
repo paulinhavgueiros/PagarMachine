@@ -8,12 +8,24 @@
 
 #import <UIKit/UIKit.h>
 
-///A Default color has a number that corresponds to a tag of a view in Colors.nib
-typedef enum DefaultColor {
+/*!
+ * @typedef DefaultColor
+ * @brief A list of colors, each of which has a number that corresponds to a tag of a view in Colors.nib
+ */
+typedef enum {
+    /// Background color for card machine UI screen
     DefaultColorMainScreenBackground = 101,
+    
+    /// Background color for selected menu option in the menu screen
     DefaultColorMenuItemSelectedBackground = 102,
+    
+    /// Background color for deselected menu option in the menu screen
     DefaultColorMenuItemDeselectedBackground = 103,
+    
+    /// Background color for selected field in the value selection screen
     DefaultColorLabelSelectedBackground = 104,
+    
+    /// Background color for deselected field in the value selection screen
     DefaultColorLabelDeselectedBackground = 105
 } DefaultColor;
 
@@ -22,6 +34,11 @@ typedef enum DefaultColor {
 
 #pragma mark - Default Colors
 
+/*!
+ * @discussion Method that retrieves the color for a selected default color identifier
+ * @param type The default color identifier
+ * return A UIColor object for the retrieved color
+ */
 + (UIColor *)defaultColor:(DefaultColor)type;
 
 

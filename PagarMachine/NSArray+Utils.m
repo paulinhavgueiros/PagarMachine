@@ -10,6 +10,8 @@
 
 @implementation NSArray(Utils)
 
+#pragma mark - Property List
+
 + (NSArray *)loadPlistWithName:(NSString *)name {
     NSURL *url = [[NSBundle mainBundle] URLForResource:name withExtension:@"plist"];
     return [NSArray arrayWithContentsOfURL:url];

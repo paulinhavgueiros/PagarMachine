@@ -8,7 +8,10 @@
 
 #import "CALayer+Utils.h"
 
+
 @implementation CALayer(Utils)
+
+#pragma mark - Border Colors
 
 - (void)setBorderUIColor:(UIColor*)color {
     self.borderColor = color.CGColor;

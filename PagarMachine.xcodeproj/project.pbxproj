@@ -19,7 +19,6 @@
 		811E16B41E32F707006F8AF1 /* UIColor+Utils.m in Sources */ = {isa = PBXBuildFile; fileRef = 811E16B01E32F707006F8AF1 /* UIColor+Utils.m */; };
 		811E16B51E32F707006F8AF1 /* UIView+Utils.m in Sources */ = {isa = PBXBuildFile; fileRef = 811E16B21E32F707006F8AF1 /* UIView+Utils.m */; };
 		811E16FC1E3300E0006F8AF1 /* libdesafio.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 811A642B1E2F116000EF9AF7 /* libdesafio.a */; };
-		811E16FE1E33228C006F8AF1 /* Todo in Resources */ = {isa = PBXBuildFile; fileRef = 811E16FD1E33228C006F8AF1 /* Todo */; };
 		8134E7571E342ADF00EDAD84 /* MenuViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8134E7561E342ADF00EDAD84 /* MenuViewController.m */; };
 		8134E75A1E342B5300EDAD84 /* MenuTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 8134E7591E342B5300EDAD84 /* MenuTableViewCell.m */; };
 		8134E75C1E342FB800EDAD84 /* Colors.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8134E75B1E342FB800EDAD84 /* Colors.xib */; };
@@ -72,7 +71,6 @@
 		811E16B01E32F707006F8AF1 /* UIColor+Utils.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIColor+Utils.m"; sourceTree = "<group>"; };
 		811E16B11E32F707006F8AF1 /* UIView+Utils.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+Utils.h"; sourceTree = "<group>"; };
 		811E16B21E32F707006F8AF1 /* UIView+Utils.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+Utils.m"; sourceTree = "<group>"; };
-		811E16FD1E33228C006F8AF1 /* Todo */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Todo; sourceTree = "<group>"; };
 		8134E7551E342ADF00EDAD84 /* MenuViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MenuViewController.h; sourceTree = "<group>"; };
 		8134E7561E342ADF00EDAD84 /* MenuViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MenuViewController.m; sourceTree = "<group>"; };
 		8134E7581E342B5300EDAD84 /* MenuTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MenuTableViewCell.h; sourceTree = "<group>"; };
@@ -140,7 +138,6 @@
 		811A63F51E2F090D00EF9AF7 /* PagarMachine */ = {
 			isa = PBXGroup;
 			children = (
-				811E16FD1E33228C006F8AF1 /* Todo */,
 				811E16B71E32F72F006F8AF1 /* Frameworks and Libraries */,
 				811E16AB1E32F5D8006F8AF1 /* Application Root */,
 				811E16AC1E32F6D2006F8AF1 /* Utilities */,
@@ -364,7 +361,6 @@
 				8134E7621E343C1E00EDAD84 /* Operations.plist in Resources */,
 				811A64031E2F090F00EF9AF7 /* Assets.xcassets in Resources */,
 				811A64011E2F090F00EF9AF7 /* Main.storyboard in Resources */,
-				811E16FE1E33228C006F8AF1 /* Todo in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

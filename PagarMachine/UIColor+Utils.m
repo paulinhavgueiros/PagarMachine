@@ -10,7 +10,6 @@
 
 @implementation UIColor(Utils)
 
-
 #pragma mark - Default Colors
 
 + (UIColor *)defaultColor:(DefaultColor)type {
@@ -24,7 +23,6 @@
             }
         }
     }
-    
     return tagLabel.backgroundColor;
 }
 
