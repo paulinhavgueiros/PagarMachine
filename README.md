@@ -9,6 +9,7 @@ PagarMachine consists of a simple payment machine for authorizing and capturing 
 * Download the project from [here](https://github.com/paulinhavgueiros/PagarMachine)
 * Double click the PagarMachine.xcodeproj file from the root directory to open the project in XCode
 * Build and run the project using the 'Play' button located in the upper left corner of XCode
+* Default password for operations is **1234**, and may be changed in the Utils.h file
 
 # To check out the project #
 
