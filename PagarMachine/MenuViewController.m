@@ -116,6 +116,7 @@
     [menuTableViewCell.menuTitleLabel setText:[self.operations[indexPath.row] objectForKey:OPERATION_TITLE_KEY]];
     [menuTableViewCell.menuTitleLabel setNumberOfLines:0];
     [menuTableViewCell.menuTitleLabel sizeToFit];
+    [menuTableViewCell.menuTitleLabel layoutIfNeeded];
     
     /// update view heigth for menu item
     self.cellHeights[indexPath.row] = [NSNumber numberWithFloat:menuTableViewCell.menuTitleLabel.frame.size.height + 17];

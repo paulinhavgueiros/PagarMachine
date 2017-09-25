@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		3BC780A11F7945C6000644FA /* libdesafio.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 3BC780A01F7945C6000644FA /* libdesafio.a */; };
 		811A63F81E2F090E00EF9AF7 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 811A63F71E2F090E00EF9AF7 /* main.m */; };
 		811A63FB1E2F090E00EF9AF7 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 811A63FA1E2F090E00EF9AF7 /* AppDelegate.m */; };
 		811A63FE1E2F090E00EF9AF7 /* MachineViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 811A63FD1E2F090E00EF9AF7 /* MachineViewController.m */; };
@@ -47,6 +48,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		3BC780A01F7945C6000644FA /* libdesafio.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = libdesafio.a; sourceTree = "<group>"; };
 		811A63F31E2F090D00EF9AF7 /* PagarMachine.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PagarMachine.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		811A63F71E2F090E00EF9AF7 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		811A63F91E2F090E00EF9AF7 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -94,6 +96,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				811E16FC1E3300E0006F8AF1 /* libdesafio.a in Frameworks */,
+				3BC780A11F7945C6000644FA /* libdesafio.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -232,6 +235,7 @@
 		811E16B71E32F72F006F8AF1 /* Frameworks and Libraries */ = {
 			isa = PBXGroup;
 			children = (
+				3BC780A01F7945C6000644FA /* libdesafio.a */,
 				811A64291E2F112900EF9AF7 /* desafio.h */,
 			);
 			name = "Frameworks and Libraries";
@@ -547,7 +551,10 @@
 				INFOPLIST_FILE = PagarMachine/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				LIBRARY_SEARCH_PATHS = /Users/Paulinha/Desktop/pauladesafioios;
+				LIBRARY_SEARCH_PATHS = (
+					/Users/Paulinha/Desktop/pauladesafioios,
+					"$(PROJECT_DIR)/PagarMachine",
+				);
 				OTHER_LDFLAGS = "";
 				PRODUCT_BUNDLE_IDENTIFIER = br.com.pan.PagarMachine;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -562,7 +569,10 @@
 				INFOPLIST_FILE = PagarMachine/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				LIBRARY_SEARCH_PATHS = /Users/Paulinha/Desktop/pauladesafioios;
+				LIBRARY_SEARCH_PATHS = (
+					/Users/Paulinha/Desktop/pauladesafioios,
+					"$(PROJECT_DIR)/PagarMachine",
+				);
 				ONLY_ACTIVE_ARCH = YES;
 				OTHER_LDFLAGS = "";
 				PRODUCT_BUNDLE_IDENTIFIER = br.com.pan.PagarMachine;
